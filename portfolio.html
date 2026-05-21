@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Harsh Patel | Frontend Developer</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            outfit: ['Outfit', 'sans-serif'],
+          },
+          colors: {
+            primary: '#00E5CC',
+            dark: '#050816',
+            card: '#111827',
+            border: '#1F2937'
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    * {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Outfit', sans-serif;
+      background: #050816;
+      color: white;
+      overflow-x: hidden;
+    }
+
+    .gradient-text {
+      background: linear-gradient(to right, #00E5CC, #38bdf8);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .glass {
+      background: rgba(255,255,255,0.05);
+      backdrop-filter: blur(10px);
+      border: 1px solid rgba(255,255,255,0.08);
+    }
+
+    .glow {
+      box-shadow: 0 0 40px rgba(0,229,204,0.18);
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <header class="fixed top-0 left-0 w-full z-50 bg-black/40 backdrop-blur-lg border-b border-white/5">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold tracking-wide">
+        Harsh<span class="text-primary">.</span>
+      </h1>
+
+      <nav class="hidden md:flex items-center gap-8 text-sm text-gray-300">
+        <a href="#about" class="hover:text-primary transition">About</a>
+        <a href="#skills" class="hover:text-primary transition">Skills</a>
+        <a href="#experience" class="hover:text-primary transition">Experience</a>
+        <a href="#projects" class="hover:text-primary transition">Projects</a>
+        <a href="#contact" class="hover:text-primary transition">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="min-h-screen flex items-center pt-28">
+    <div class="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-16 items-center">
+
+      <div>
+        <p class="uppercase tracking-[5px] text-primary text-sm mb-4">
+          Frontend Developer
+        </p>
+
+        <h1 class="text-5xl md:text-7xl font-extrabold leading-tight mb-6">
+          Hi, I'm <br>
+          <span class="gradient-text">Harsh Patel</span>
+        </h1>
+
+        <p class="text-gray-400 text-lg leading-8 max-w-2xl mb-8">
+          Frontend Developer with experience in Angular, Tailwind CSS,
+          TypeScript, JavaScript and scalable enterprise applications.
+          Passionate about building clean UI, modern dashboards and
+          responsive web experiences.
+        </p>
+
+        <div class="flex flex-wrap gap-4">
+          <a href="#projects" class="px-7 py-3 rounded-xl bg-primary text-black font-semibold hover:scale-105 transition glow">
+            View Projects
+          </a>
+
+          <a href="#contact" class="px-7 py-3 rounded-xl border border-primary text-primary hover:bg-primary hover:text-black transition">
+            Contact Me
+          </a>
+        </div>
+
+        <div class="grid grid-cols-3 gap-4 mt-14">
+          <div class="glass rounded-2xl p-5 text-center">
+            <h3 class="text-3xl font-bold text-primary">2+</h3>
+            <p class="text-sm text-gray-400 mt-1">Years Experience</p>
+          </div>
+
+          <div class="glass rounded-2xl p-5 text-center">
+            <h3 class="text-3xl font-bold text-primary">7+</h3>
+            <p class="text-sm text-gray-400 mt-1">Projects</p>
+          </div>
+
+          <div class="glass rounded-2xl p-5 text-center">
+            <h3 class="text-3xl font-bold text-primary">2</h3>
+            <p class="text-sm text-gray-400 mt-1">Companies</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="flex justify-center">
+        <div class="glass rounded-3xl p-8 w-full max-w-md glow">
+          <div class="w-28 h-28 rounded-full bg-primary text-black text-4xl font-bold flex items-center justify-center mx-auto mb-6">
+            HP
+          </div>
+
+          <div class="text-center">
+            <h2 class="text-3xl font-bold mb-2">Harsh Patel</h2>
+            <p class="text-primary mb-4">Frontend Developer</p>
+          </div>
+
+          <div class="flex flex-wrap gap-3 justify-center mb-8">
+            <span class="px-4 py-2 rounded-full bg-primary/10 text-primary text-sm">Angular</span>
+            <span class="px-4 py-2 rounded-full bg-primary/10 text-primary text-sm">Tailwind</span>
+            <span class="px-4 py-2 rounded-full bg-primary/10 text-primary text-sm">TypeScript</span>
+            <span class="px-4 py-2 rounded-full bg-primary/10 text-primary text-sm">JavaScript</span>
+          </div>
+
+          <div class="space-y-4 text-gray-300 text-sm">
+            <p>📧 harshvpatel2002@gmail.com</p>
+            <p>📞 +91 9327086389</p>
+            <p>📍 Surat, Gujarat, India</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="py-28">
+    <div class="max-w-7xl mx-auto px-6">
+
+      <div class="text-center mb-16">
+        <p class="text-primary uppercase tracking-[4px] text-sm mb-3">About Me</p>
+        <h2 class="text-5xl font-bold">Who Am I?</h2>
+      </div>
+
+      <div class="grid lg:grid-cols-2 gap-12 items-center">
+
+        <div class="glass rounded-3xl p-8">
+          <h3 class="text-3xl font-bold mb-6 gradient-text">
+            Frontend Engineer Focused on Modern Web Applications
+          </h3>
+
+          <p class="text-gray-400 leading-8 mb-5">
+            I am a frontend developer from Surat with hands-on experience in Angular, HTML, Tailwind CSS, TypeScript and JavaScript.
+          </p>
+
+          <p class="text-gray-400 leading-8 mb-5">
+            I worked at Chirayu Software Solutions on a bullions trading platform handling admin panels, deployments and production support.
+          </p>
+
+          <p class="text-gray-400 leading-8">
+            Currently at Kevalam Solution, I am building ERP systems, Solar Management Systems and enterprise safety modules like SOT & IMS.
+          </p>
+        </div>
+
+        <div class="grid sm:grid-cols-2 gap-5">
+
+          <div class="glass rounded-2xl p-6">
+            <h3 class="text-primary text-2xl mb-3">⚡</h3>
+            <h4 class="text-xl font-semibold mb-2">Fast Learner</h4>
+            <p class="text-gray-400 text-sm">Quickly adapts to new technologies and frameworks.</p>
+          </div>
+
+          <div class="glass rounded-2xl p-6">
+            <h3 class="text-primary text-2xl mb-3">🚀</h3>
+            <h4 class="text-xl font-semibold mb-2">Scalable UI</h4>
+            <p class="text-gray-400 text-sm">Builds reusable and scalable frontend systems.</p>
+          </div>
+
+          <div class="glass rounded-2xl p-6">
+            <h3 class="text-primary text-2xl mb-3">🤝</h3>
+            <h4 class="text-xl font-semibold mb-2">Team Collaboration</h4>
+            <p class="text-gray-400 text-sm">Works closely with backend teams and clients.</p>
+          </div>
+
+          <div class="glass rounded-2xl p-6">
+            <h3 class="text-primary text-2xl mb-3">🎯</h3>
+            <h4 class="text-xl font-semibold mb-2">Problem Solving</h4>
+            <p class="text-gray-400 text-sm">Focused on clean solutions and optimized UI flows.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills" class="py-28 bg-white/[0.02]">
+    <div class="max-w-7xl mx-auto px-6">
+
+      <div class="text-center mb-16">
+        <p class="text-primary uppercase tracking-[4px] text-sm mb-3">Skills</p>
+        <h2 class="text-5xl font-bold">Technical Stack</h2>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+        <div class="glass rounded-2xl p-6">
+          <h3 class="text-xl font-bold mb-5">Frontend</h3>
+          <div class="flex flex-wrap gap-3">
+            <span class="px-4 py-2 bg-primary/10 rounded-full text-primary text-sm">Angular</span>
+            <span class="px-4 py-2 bg-primary/10 rounded-full text-primary text-sm">HTML5</span>
+            <span class="px-4 py-2 bg-primary/10 rounded-full text-primary text-sm">CSS3</span>
+            <span class="px-4 py-2 bg-primary/10 rounded-full text-primary text-sm">JavaScript</span>
+            <span class="px-4 py-2 bg-primary/10 rounded-full text-primary text-sm">TypeScript</span>
+          </div>
+        </div>
+
+        <div class="glass rounded-2xl p-6">
+          <h3 class="text-xl font-bold mb-5">Styling</h3>
+          <div class="flex flex-wrap gap-3">
+            <span class="px-4 py-2 bg-primary/10 rounded-full text-primary text-sm">Tailwind CSS</span>
+            <span class="px-4 py-2 bg-primary/10 rounded-full text-primary text-sm">Responsive UI</span>
+            <span class="px-4 py-2 bg-primary/10 rounded-full text-primary text-sm">Modern Layouts</span>
+          </div>
+        </div>
+
+        <div class="glass rounded-2xl p-6">
+          <h3 class="text-xl font-bold mb-5">Tools</h3>
+          <div class="flex flex-wrap gap-3">
+            <span class="px-4 py-2 bg-primary/10 rounded-full text-primary text-sm">Git</span>
+            <span class="px-4 py-2 bg-primary/10 rounded-full text-primary text-sm">GitHub</span>
+            <span class="px-4 py-2 bg-primary/10 rounded-full text-primary text-sm">Deployment</span>
+          </div>
+        </div>
+
+        <div class="glass rounded-2xl p-6">
+          <h3 class="text-xl font-bold mb-5">Backend Basics</h3>
+          <div class="flex flex-wrap gap-3">
+            <span class="px-4 py-2 bg-primary/10 rounded-full text-primary text-sm">PHP</span>
+            <span class="px-4 py-2 bg-primary/10 rounded-full text-primary text-sm">MySQL</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section id="experience" class="py-28">
+    <div class="max-w-6xl mx-auto px-6">
+
+      <div class="text-center mb-16">
+        <p class="text-primary uppercase tracking-[4px] text-sm mb-3">Experience</p>
+        <h2 class="text-5xl font-bold">Work Journey</h2>
+      </div>
+
+      <div class="space-y-8">
+
+        <div class="glass rounded-3xl p-8 border border-primary/20">
+          <div class="flex flex-wrap justify-between gap-4 mb-5">
+            <div>
+              <h3 class="text-2xl font-bold">Frontend Developer</h3>
+              <p class="text-primary mt-2">Kevalam Solution</p>
+            </div>
+
+            <div class="text-right">
+              <p class="text-primary">Nov 2025 - Present</p>
+              <span class="inline-block mt-2 px-4 py-1 rounded-full bg-primary/10 text-primary text-sm">
+                Current
+              </span>
+            </div>
+          </div>
+
+          <ul class="space-y-3 text-gray-400 leading-7">
+            <li>• Building enterprise web applications using Angular, Tailwind CSS and TypeScript.</li>
+            <li>• Developed Solar Management System and SOT & IMS modules.</li>
+            <li>• Currently building JBGO ERP System for automobile business management.</li>
+            <li>• Creating reusable components and optimizing frontend performance.</li>
+          </ul>
+        </div>
+
+        <div class="glass rounded-3xl p-8">
+          <div class="flex flex-wrap justify-between gap-4 mb-5">
+            <div>
+              <h3 class="text-2xl font-bold">Frontend Developer</h3>
+              <p class="text-primary mt-2">Chirayu Software Solutions</p>
+            </div>
+
+            <div class="text-right">
+              <p class="text-primary">Mar 2024 - Oct 2025</p>
+            </div>
+          </div>
+
+          <ul class="space-y-3 text-gray-400 leading-7">
+            <li>• Worked on a live bullions trading platform for gold & silver trading.</li>
+            <li>• Handled frontend updates, admin panels and production deployments.</li>
+            <li>• Provided technical support and urgent issue resolution.</li>
+            <li>• Managed website updates and client-facing production fixes.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="py-28 bg-white/[0.02]">
+    <div class="max-w-7xl mx-auto px-6">
+
+      <div class="text-center mb-16">
+        <p class="text-primary uppercase tracking-[4px] text-sm mb-3">Projects</p>
+        <h2 class="text-5xl font-bold">Featured Work</h2>
+      </div>
+
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <div class="glass rounded-3xl p-6 hover:-translate-y-2 transition duration-300">
+          <h3 class="text-2xl font-bold mb-4">JBGO ERP System</h3>
+          <p class="text-gray-400 leading-7 mb-5">
+            Full-scale ERP for automobile organization covering sales,
+            inventory, HR, finance and service management.
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1 rounded-full bg-primary/10 text-primary text-sm">Angular</span>
+            <span class="px-3 py-1 rounded-full bg-primary/10 text-primary text-sm">TypeScript</span>
+          </div>
+        </div>
+
+        <div class="glass rounded-3xl p-6 hover:-translate-y-2 transition duration-300">
+          <h3 class="text-2xl font-bold mb-4">Solar Management System</h3>
+          <p class="text-gray-400 leading-7 mb-5">
+            Dashboard for solar installation tracking, energy monitoring and client management.
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1 rounded-full bg-primary/10 text-primary text-sm">Angular</span>
+            <span class="px-3 py-1 rounded-full bg-primary/10 text-primary text-sm">Tailwind</span>
+          </div>
+        </div>
+
+        <div class="glass rounded-3xl p-6 hover:-translate-y-2 transition duration-300">
+          <h3 class="text-2xl font-bold mb-4">SOT & IMS</h3>
+          <p class="text-gray-400 leading-7 mb-5">
+            Enterprise safety observation and incident management modules.
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1 rounded-full bg-primary/10 text-primary text-sm">Angular</span>
+            <span class="px-3 py-1 rounded-full bg-primary/10 text-primary text-sm">TypeScript</span>
+          </div>
+        </div>
+
+        <div class="glass rounded-3xl p-6 hover:-translate-y-2 transition duration-300">
+          <h3 class="text-2xl font-bold mb-4">Bullions Trading Platform</h3>
+          <p class="text-gray-400 leading-7 mb-5">
+            High-traffic gold and silver trading platform with admin panel management.
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1 rounded-full bg-primary/10 text-primary text-sm">HTML</span>
+            <span class="px-3 py-1 rounded-full bg-primary/10 text-primary text-sm">JavaScript</span>
+          </div>
+        </div>
+
+        <div class="glass rounded-3xl p-6 hover:-translate-y-2 transition duration-300">
+          <h3 class="text-2xl font-bold mb-4">Bank Management System</h3>
+          <p class="text-gray-400 leading-7 mb-5">
+            Banking application built with PHP and MySQL for academic project.
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1 rounded-full bg-primary/10 text-primary text-sm">PHP</span>
+            <span class="px-3 py-1 rounded-full bg-primary/10 text-primary text-sm">MySQL</span>
+          </div>
+        </div>
+
+        <div class="glass rounded-3xl p-6 hover:-translate-y-2 transition duration-300">
+          <h3 class="text-2xl font-bold mb-4">Voice Assistant</h3>
+          <p class="text-gray-400 leading-7 mb-5">
+            Voice-controlled assistant using speech recognition APIs.
+          </p>
+          <div class="flex flex-wrap gap-2">
+            <span class="px-3 py-1 rounded-full bg-primary/10 text-primary text-sm">Speech API</span>
+            <span class="px-3 py-1 rounded-full bg-primary/10 text-primary text-sm">JavaScript</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="py-28">
+    <div class="max-w-5xl mx-auto px-6 text-center">
+
+      <p class="text-primary uppercase tracking-[4px] text-sm mb-3">Contact</p>
+
+      <h2 class="text-5xl font-bold mb-6">
+        Let's Work Together
+      </h2>
+
+      <p class="text-gray-400 text-lg leading-8 max-w-2xl mx-auto mb-10">
+        Available for frontend development projects, enterprise dashboards and modern responsive web applications.
+      </p>
+
+      <div class="flex flex-wrap justify-center gap-5">
+
+        <a href="mailto:harshvpatel2002@gmail.com"
+          class="px-7 py-4 rounded-2xl bg-primary text-black font-semibold hover:scale-105 transition">
+          Email Me
+        </a>
+
+        <a href="tel:+919327086389"
+          class="px-7 py-4 rounded-2xl border border-primary text-primary hover:bg-primary hover:text-black transition">
+          Call Me
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="border-t border-white/5 py-8">
+    <div class="max-w-7xl mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-4">
+
+      <h2 class="text-xl font-bold">
+        Harsh<span class="text-primary">.</span>
+      </h2>
+
+      <p class="text-gray-500 text-sm text-center">
+        © 2026 Harsh Patel • Frontend Developer Portfolio
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
